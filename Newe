@@ -3,6 +3,8 @@ start = 0
 
 while my_list[start] > 0 and len(my_list) > start:
     if my_list[start] == 0:
-        continue
+        start += 1
+    if my_list[start] < 0:
+        break
     print(my_list[start])
     start += 1
